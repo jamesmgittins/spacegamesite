@@ -1,0 +1,155 @@
+/* Styles go here. */
+
+:root {
+  /* --main-font-color: #00BB00; */
+  --main-font-color: #d0d0d0;
+  --menu-border-color: rgb(25,60,55);
+  --bad-hover-color: red;
+  --good-hover-color: yellow;
+  --main-text-shadow-color: rgb(4, 24, 4);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: #ccc;
+  user-select: none;
+  color: var(--main-font-color);
+  overflow: hidden;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+button, select, input {
+  padding: 0.5rem 1rem;
+  background-color: rgb(15,45,50);
+  box-shadow: 4px 4px 8px rgb(5,20,25);
+  border: none;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  color: #ddd;
+}
+
+input[type="color"] {
+  min-height: 2em;
+  min-width: 8em;
+  padding: 0.25em;
+}
+
+button:hover, select:hover, input:hover {
+  background-color: rgb(25,55,60);
+}
+
+button:focus, select:focus, input:focus {
+  outline: none;
+}
+
+button:active, select:active, input:active {
+  transform: translate(2px,2px);
+  box-shadow: inset 4px 4px 6px rgb(5,20,25);
+}
+
+a:hover {
+  color: var(--good-hover-color);
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -50;
+}
+
+div.buttons {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#target {
+  color: var(--main-font-color);
+  text-shadow: 2px 2px 12px #000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition: min-width 2s, min-height 2s;
+}
+
+#target:before, #target:after, #target>:first-child:before, #target>:first-child:after {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-color: var(--main-font-color);
+  /* or whatever colour */
+  border-style: solid;
+  /* or whatever style */
+  content: ' ';
+}
+
+#target:before {
+  top: 0;
+  left: 0;
+  border-width: 1px 0 0 1px
+}
+
+#target:after {
+  top: 0;
+  right: 0;
+  border-width: 1px 1px 0 0
+}
+
+#target>:first-child:before {
+  bottom: 0;
+  right: 0;
+  border-width: 0 1px 1px 0
+}
+
+#target>:first-child:after {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 1px 1px
+}
+
+#target p, #target span {
+  margin: 10px auto;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+#target p {
+  align-self: flex-start;
+}
+
+#target span {
+  align-self: flex-end;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
