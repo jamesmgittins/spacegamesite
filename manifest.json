@@ -1,0 +1,9 @@
+{
+  "short_name": "Space Game",
+  "name": "Space Game",
+  "start_url": "https://space.gti.nz",
+  "background_color": "#3367D6",
+  "display": "fullscreen",
+  "scope": "https://space.gti.nz",
+  "theme_color": "#3367D6"
+}
