@@ -135,6 +135,18 @@ div.buttons {
   align-self: flex-end;
 }
 
+.poi-label {
+  padding-bottom: 5rem;
+  color: var(--main-font-color);
+  text-shadow: 2px 2px 12px #000;
+  text-align: center;
+}
+
+.poi-label p, .poi-label span {
+  margin: 10px auto;
+  padding: 0 10px;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;

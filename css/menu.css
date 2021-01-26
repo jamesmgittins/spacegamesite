@@ -1,6 +1,5 @@
 div.menu {
     position: absolute;
-    /* top: 50%; */
     left: 50%;
     bottom : 5%;
     background-color: rgb(10,40,45);
@@ -67,8 +66,8 @@ div.menu div.section {
         transform: none;
         padding: 28px 0.25em 0.25em;
         bottom: auto;
-        top: 30%;
-        left: 30%;
+        top: 2rem;
+        left: 2rem;
         max-height: 90%;
         min-width: 100px;
         min-height: 75px;
