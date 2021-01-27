@@ -20,6 +20,10 @@ html, body {
   overflow: hidden;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .text-right {
   text-align: right;
 }
